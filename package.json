@@ -1,6 +1,6 @@
 {
   "name": "externa-nuxt-starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Minimal Nuxt starter for Externa Public CMS API",
   "type": "module",
@@ -27,5 +27,8 @@
     "eslint": "^9.36.0",
     "typescript": "^5.9.2",
     "vue-tsc": "^2.2.12"
+  },
+  "overrides": {
+    "@nuxt/devtools": "3.4.3"
   }
 }
