@@ -15,9 +15,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Update `.nvmrc` to `22.13.0` and CI matrix to test both Node 22.13.0 and 24
+- Update CI matrix to test both Node 22.13.0 and 24
 - Update README to reflect Node.js 22.13+ requirement
 - Add query parameter support (`?page=` and `?locale=`) to `/api/home` route as demonstration of working `getQuery`
+
+### BREAKING CHANGE
+
+**Minimum Node.js version is now 22.13.0.** Node.js 20 reached end-of-life in April 2026 and is no longer supported by the toolchain (eslint requires `Object.groupBy` from Node 21+). Users running Node 20 must upgrade to Node 22.13+ or Node 24+ before updating to this version.
 
 ## [1.1.0] - 2026-10-21
 
