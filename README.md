@@ -1,3 +1,11 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset=".github/assets/header-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset=".github/assets/header-light.svg">
+    <img alt="Externa: Nuxt starter for Externa" src=".github/assets/header-light.svg" width="100%">
+  </picture>
+</p>
+
 # Externa Nuxt starter
 
 Minimal **Nuxt 3** frontend that lists and shows collection items from the Externa [Public CMS API](https://docs.externa.qiick.io/docs/public-cms-api).
@@ -6,7 +14,7 @@ Not a marketing theme. No Kitchen Sink. Server-side fetches only — the API key
 
 ## Prerequisites
 
-- Node.js 20+ (24 recommended)
+- Node.js 22.13+ (24 recommended)
 - A running Externa install (fresh installs need no seeded collection)
 
 ## Setup

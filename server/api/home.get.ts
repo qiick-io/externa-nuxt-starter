@@ -21,8 +21,13 @@ async function loadAvailableSlugs(event: Parameters<typeof listCollections>[0]):
 /**
  * Server-only home payload: list items or setup / error UI data.
  * API key stays on the server.
+ * Supports ?page= and ?locale= query parameters (parsed via getQuery).
  */
 export default defineEventHandler(async (event): Promise<HomePayload> => {
+  const query = getQuery(event)
+  const _page = query.page ? Number(query.page) : undefined
+  const _locale = query.locale ? String(query.locale) : undefined
+
   try {
     const resolved = await resolveCollection(event)
 
