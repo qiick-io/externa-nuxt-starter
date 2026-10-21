@@ -14,7 +14,7 @@ Not a marketing theme. No Kitchen Sink. Server-side fetches only — the API key
 
 ## Prerequisites
 
-- Node.js 20+ (24 recommended)
+- Node.js 22.13+ (24 recommended)
 - A running Externa install (fresh installs need no seeded collection)
 
 ## Setup
