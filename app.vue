@@ -18,7 +18,7 @@ useHead({
       </NuxtLink>
     </header>
     <main class="site-main">
-      <slot />
+      <NuxtPage />
     </main>
   </div>
 </template>
