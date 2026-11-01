@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { ItemPayload } from '~/shared/types/payloads'
+import type { ItemPayload } from '#shared/types/payloads'
 
 const route = useRoute()
 const id = computed(() => String(route.params.id))

@@ -1,4 +1,5 @@
-import type { ItemPayload } from '../../../shared/types/payloads'
+import { defineEventHandler, getRouterParam } from 'h3'
+import type { ItemPayload } from '#shared/types/payloads'
 import {
   collectionReadable,
   configuredCollectionSlug,
