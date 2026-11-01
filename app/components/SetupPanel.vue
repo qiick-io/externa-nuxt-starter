@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { ConnectionProbe } from '~/shared/types/externa'
+import type { ConnectionProbe } from '#shared/types/externa'
 
 const props = withDefaults(
   defineProps<{

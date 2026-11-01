@@ -1,5 +1,5 @@
 import type { H3Event } from 'h3'
-import type { ConnectionProbe } from '../../../shared/types/externa'
+import type { ConnectionProbe } from '#shared/types/externa'
 import { baseUrl } from './client'
 
 /**
