@@ -7,9 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.0] - 2026-11-01
+
 ### Security
 
-- **deps**: Upgrade `nuxt` from 3.21.11 to ^4.6.3. Nuxt 3 is end of life and will not patch these; 4.6.2 is still missing the 4.6.3 fixes:
+- **deps**: Upgrade `nuxt` from 3.21.11 to ^4.6.3 (#41). Nuxt 3 is end of life and will not patch these; 4.6.2 is still missing the 4.6.3 fixes:
   - GHSA-2fxj-c3j7-rr69 — redirect route rules were not applied to server island pages (fixed in 4.6.3)
   - GHSA-648h-gw55-m2g7 — `@nuxt/vite-builder` dev server could expose private runtime config (fixed in 4.6.3)
   - GHSA-9v7c-q64q-vv33 — dot segments in the request path bypassed server middleware and route rules (fixed in 4.6.3)
