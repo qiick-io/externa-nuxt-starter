@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { HomePayload } from '~/shared/types/payloads'
+import type { HomePayload } from '#shared/types/payloads'
 
 const { data, error } = await useFetch<HomePayload>('/api/home', {
   key: 'home',

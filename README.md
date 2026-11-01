@@ -8,13 +8,13 @@
 
 # Externa Nuxt starter
 
-Minimal **Nuxt 3** frontend that lists and shows collection items from the Externa [Public CMS API](https://docs.externa.qiick.io/docs/public-cms-api).
+Minimal **Nuxt 4** frontend that lists and shows collection items from the Externa [Public CMS API](https://docs.externa.qiick.io/docs/public-cms-api).
 
 Not a marketing theme. No Kitchen Sink. Server-side fetches only — the API key never reaches the browser (`runtimeConfig` private + `/api/*` handlers).
 
 ## Prerequisites
 
-- Node.js 22.13+ (24 recommended)
+- Node.js 22.22.3+ (22.x), 24.15.0+ (24.x), or 26+ — same range as Nuxt 4.6. Node 24 is recommended (`.nvmrc`). Node 23 and 25 are not supported.
 - A running Externa install (fresh installs need no seeded collection)
 
 ## Setup
@@ -47,6 +47,18 @@ With an empty `EXTERNA_COLLECTION` and no readable collections, the home page sh
 |------|--------|
 | `/` | server `/api/home` → resolve collection → `GET /api/v1/collections/{slug}/items` |
 | `/items/[id]` | server `/api/items/:id` → `GET /api/v1/collections/{slug}/items/{id}` |
+
+## Layout
+
+Nuxt 4 keeps the Vue app in `app/` and the repo root for everything else:
+
+| Path | Role |
+|------|------|
+| `app/` | `app.vue`, `pages/`, `components/`, `assets/`. The `~` alias points here. |
+| `server/` | Nitro routes and the Externa client. The API key stays here. |
+| `shared/` | Types used by `app/` and `server/`. Import them with `#shared/…`. |
+
+Server routes use h3 v1 (`defineEventHandler`, `getQuery`, `getRouterParam` from `h3`). Nuxt 4.6 / Nitro 2 still ship h3 1.15; do not hoist h3 2 — it breaks `getQuery` (see changelog 1.1.1).
 
 Typed helpers live in `server/utils/externa/` (client, collections, openapi). Shared types in `shared/types/`.
 

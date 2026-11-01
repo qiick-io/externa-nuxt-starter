@@ -1,4 +1,5 @@
-import type { HomePayload } from '../../shared/types/payloads'
+import { defineEventHandler, getQuery } from 'h3'
+import type { HomePayload } from '#shared/types/payloads'
 import {
   configuredCollectionSlug,
   itemLabel,

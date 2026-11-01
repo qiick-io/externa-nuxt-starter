@@ -3,7 +3,7 @@ import type {
   CollectionItem,
   CollectionSummary,
   ResolvedCollection,
-} from '../../../shared/types/externa'
+} from '#shared/types/externa'
 import { ExternaHttpError, externaConfig, externaFetch } from './client'
 
 type ListResponse = {
