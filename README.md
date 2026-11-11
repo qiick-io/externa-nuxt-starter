@@ -8,7 +8,7 @@
 
 # Externa Nuxt starter
 
-Minimal **Nuxt 4** frontend that lists and shows collection items from the Externa [Public CMS API](https://docs.externa.qiick.io/docs/public-cms-api).
+Minimal **Nuxt 4** frontend that lists and shows collection items from the Externa [Public CMS API](https://docs.qiick.io/externa/public-cms-api).
 
 Not a marketing theme. No Kitchen Sink. Server-side fetches only — the API key never reaches the browser (`runtimeConfig` private + `/api/*` handlers).
 
@@ -34,10 +34,10 @@ Open [http://localhost:3003](http://localhost:3003).
 | Variable | Required | Notes |
 |----------|----------|-------|
 | `EXTERNA_API_URL` | yes | Origin only, e.g. `http://externa-core.test` (no trailing slash) |
-| `EXTERNA_API_KEY` | no | `ek_…` Bearer secret. Omit to use the `public` role. Prefer a key scoped to the starter's collections with `read_only` enabled (core 1.3.0+) — see [API abuse controls](https://docs.externa.qiick.io/docs/api-abuse-controls#api-key-scopes) |
+| `EXTERNA_API_KEY` | no | `ek_…` Bearer secret. Omit to use the `public` role. Prefer a key scoped to the starter's collections with `read_only` enabled (core 1.3.0+) — see [API abuse controls](https://docs.qiick.io/externa/api-abuse-controls#api-key-scopes) |
 | `EXTERNA_COLLECTION` | no | Collection slug. **Leave empty** to auto-discover the first readable collection via `GET /api/v1/collections` |
 
-Grant **Read** on at least one collection under Roles → Collection access ([docs](https://docs.externa.qiick.io/docs/public-cms-api#quick-start-typical-website-read)).
+Grant **Read** on at least one collection under Roles → Collection access ([docs](https://docs.qiick.io/externa/public-cms-api#quick-start-typical-website-read)).
 
 With an empty `EXTERNA_COLLECTION` and no readable collections, the home page shows a setup panel and pings always-public `GET /api/v1/openapi.json` to confirm the API is reachable.
 
@@ -64,12 +64,12 @@ Typed helpers live in `server/utils/externa/` (client, collections, openapi). Sh
 
 ## GraphQL (optional)
 
-Same auth and Collection access apply at `/api/graphql`. This starter uses REST only; see [GraphQL](https://docs.externa.qiick.io/docs/graphql) if you prefer a query document.
+Same auth and Collection access apply at `/api/graphql`. This starter uses REST only; see [GraphQL](https://docs.qiick.io/externa/graphql) if you prefer a query document.
 
 ## Docs
 
-- Guide: [Headless starter](https://docs.externa.qiick.io/docs/headless-starter)
-- [Public CMS API](https://docs.externa.qiick.io/docs/public-cms-api) · [Client types / OpenAPI](https://docs.externa.qiick.io/docs/public-cms-api-types) · [Bruno collection](https://github.com/qiick-io/externa-bruno)
+- Guide: [Headless starter](https://docs.qiick.io/externa/headless-starter)
+- [Public CMS API](https://docs.qiick.io/externa/public-cms-api) · [Client types / OpenAPI](https://docs.qiick.io/externa/public-cms-api-types) · [Bruno collection](https://github.com/qiick-io/externa-bruno)
 - Conventions: [externa-core `docs/starters.md`](https://github.com/qiick-io/externa-core/blob/develop/docs/starters.md)
 
 ## Branches
