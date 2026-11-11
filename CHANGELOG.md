@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.1] - 2026-11-11
+
+### Changed
+
+- **docs**: Point the docs links in the README, `.env.example` and the client types to the shared Qiick docs at https://docs.qiick.io/externa; docs.externa.qiick.io redirects there page by page (#52).
+
 ## [2.0.0] - 2026-11-01
 
 ### Security
