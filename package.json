@@ -9,6 +9,7 @@
     "build": "nuxt build",
     "start": "node .output/server/index.mjs",
     "lint": "eslint .",
+    "lint:legacy": "node scripts/check-legacy-web.mjs app server shared scripts",
     "typecheck": "nuxt typecheck",
     "self-check": "node scripts/self-check.mjs",
     "postinstall": "nuxt prepare"
